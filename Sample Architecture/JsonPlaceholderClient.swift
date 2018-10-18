@@ -8,6 +8,6 @@
 
 import Foundation
 
-class JsonPlaceholderClient : HTTPClient {
+class JsonPlaceholderClient: HTTPClient {
     var baseUrl = URL(string: "https://jsonplaceholder.typicode.com/")!
 }

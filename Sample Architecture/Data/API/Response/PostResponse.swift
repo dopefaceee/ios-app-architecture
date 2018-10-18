@@ -9,10 +9,10 @@
 import Foundation
 
 struct PostResponse: Codable {
-    let userId: Int
-    let id: Int
-    let title: String
-    let body: String
+    let userId: Int?
+    let id: Int?
+    let title: String?
+    let body: String?
     
     private enum CodingKeys: String, CodingKey {
         case userId

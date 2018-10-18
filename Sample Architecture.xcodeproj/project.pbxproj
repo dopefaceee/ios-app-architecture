@@ -12,6 +12,17 @@
 		364BE26D2176FEB600A3D7C4 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BE26C2176FEB600A3D7C4 /* PostAPI.swift */; };
 		364BE2712176FF6C00A3D7C4 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BE2702176FF6C00A3D7C4 /* PostResponse.swift */; };
 		364BE2732177028F00A3D7C4 /* JsonPlaceholderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BE2722177028F00A3D7C4 /* JsonPlaceholderClient.swift */; };
+		3658D154217867A70095AD9E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D152217867A70095AD9E /* DetailViewController.swift */; };
+		3658D155217867A70095AD9E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3658D153217867A70095AD9E /* DetailViewController.xib */; };
+		3658D158217871100095AD9E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D157217871100095AD9E /* Coordinator.swift */; };
+		3658D15A2178714F0095AD9E /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D1592178714F0095AD9E /* Presentable.swift */; };
+		3658D15C217871810095AD9E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D15B217871810095AD9E /* BaseView.swift */; };
+		3658D15E217871C30095AD9E /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D15D217871C30095AD9E /* NSObjectExtension.swift */; };
+		3658D1622178723E0095AD9E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D1612178723E0095AD9E /* Router.swift */; };
+		3658D164217872590095AD9E /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D163217872590095AD9E /* RouterImpl.swift */; };
+		3658D167217872E90095AD9E /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D166217872E90095AD9E /* BaseCoordinator.swift */; };
+		3658D169217873490095AD9E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D168217873490095AD9E /* AppCoordinator.swift */; };
+		3658D16E2178752B0095AD9E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658D16D2178752B0095AD9E /* MainCoordinator.swift */; };
 		36A4C11B2175C5F000941CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A4C11A2175C5F000941CFA /* AppDelegate.swift */; };
 		36A4C1222175C5F200941CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A4C1212175C5F200941CFA /* Assets.xcassets */; };
 		36A4C1252175C5F200941CFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A4C1232175C5F200941CFA /* LaunchScreen.storyboard */; };
@@ -63,6 +74,17 @@
 		364BE26C2176FEB600A3D7C4 /* PostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = "<group>"; };
 		364BE2702176FF6C00A3D7C4 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		364BE2722177028F00A3D7C4 /* JsonPlaceholderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceholderClient.swift; sourceTree = "<group>"; };
+		3658D152217867A70095AD9E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3658D153217867A70095AD9E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3658D157217871100095AD9E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3658D1592178714F0095AD9E /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		3658D15B217871810095AD9E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		3658D15D217871C30095AD9E /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		3658D1612178723E0095AD9E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3658D163217872590095AD9E /* RouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
+		3658D166217872E90095AD9E /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		3658D168217873490095AD9E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3658D16D2178752B0095AD9E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		36A4C1172175C5F000941CFA /* Sample Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A4C11A2175C5F000941CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36A4C1212175C5F200941CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +155,78 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		3658D151217867830095AD9E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3658D152217867A70095AD9E /* DetailViewController.swift */,
+				3658D153217867A70095AD9E /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3658D156217870DA0095AD9E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3658D165217872A90095AD9E /* Base */,
+				3658D160217872240095AD9E /* Router */,
+				3658D166217872E90095AD9E /* BaseCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3658D15F217871CA0095AD9E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3658D15D217871C30095AD9E /* NSObjectExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3658D160217872240095AD9E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3658D1612178723E0095AD9E /* Router.swift */,
+				3658D163217872590095AD9E /* RouterImpl.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3658D165217872A90095AD9E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3658D157217871100095AD9E /* Coordinator.swift */,
+				3658D1592178714F0095AD9E /* Presentable.swift */,
+				3658D15B217871810095AD9E /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3658D16A217873580095AD9E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36C5763B21772E2A00B7E6B5 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3658D16B217874FB0095AD9E /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				3658D16C2178750B0095AD9E /* Main Flow */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		3658D16C2178750B0095AD9E /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				36A4C14E2175CD8500941CFA /* Home */,
+				3658D151217867830095AD9E /* Detail */,
+				3658D16D2178752B0095AD9E /* MainCoordinator.swift */,
+			);
+			path = "Main Flow";
+			sourceTree = "<group>";
+		};
 		36A4C10E2175C5F000941CFA = {
 			isa = PBXGroup;
 			children = (
@@ -161,13 +255,13 @@
 				36F22B7D2175E33D002B7559 /* Helpers */,
 				36F22B742175DD10002B7559 /* Model */,
 				36A4C1532175D21500941CFA /* Data */,
-				36A4C14E2175CD8500941CFA /* Home */,
+				3658D16B217874FB0095AD9E /* Flow */,
 				36A4C11A2175C5F000941CFA /* AppDelegate.swift */,
+				3658D168217873490095AD9E /* AppCoordinator.swift */,
+				364BE2722177028F00A3D7C4 /* JsonPlaceholderClient.swift */,
 				36A4C1212175C5F200941CFA /* Assets.xcassets */,
 				36A4C1232175C5F200941CFA /* LaunchScreen.storyboard */,
 				36A4C1262175C5F200941CFA /* Info.plist */,
-				364BE2722177028F00A3D7C4 /* JsonPlaceholderClient.swift */,
-				36C5763B21772E2A00B7E6B5 /* ViewModel.swift */,
 			);
 			path = "Sample Architecture";
 			sourceTree = "<group>";
@@ -238,6 +332,9 @@
 		36F22B7D2175E33D002B7559 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3658D16A217873580095AD9E /* ViewModel */,
+				3658D15F217871CA0095AD9E /* Extension */,
+				3658D156217870DA0095AD9E /* Coordinator */,
 				36F22B7E2175E346002B7559 /* HTTP Request */,
 			);
 			path = Helpers;
@@ -397,6 +494,7 @@
 				36F22B7C2175DEEC002B7559 /* TableViewController.xib in Resources */,
 				36A4C1252175C5F200941CFA /* LaunchScreen.storyboard in Resources */,
 				36A4C1222175C5F200941CFA /* Assets.xcassets in Resources */,
+				3658D155217867A70095AD9E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,17 +664,27 @@
 				36C5763A21772D7A00B7E6B5 /* TableViewModel.swift in Sources */,
 				36F22B732175DC10002B7559 /* PostRepository.swift in Sources */,
 				36F22B822175E3A2002B7559 /* HTTPMethod.swift in Sources */,
+				3658D164217872590095AD9E /* RouterImpl.swift in Sources */,
 				364BE2732177028F00A3D7C4 /* JsonPlaceholderClient.swift in Sources */,
 				364BE26B2176FDC900A3D7C4 /* AsyncResult.swift in Sources */,
 				36F22B762175DD1B002B7559 /* Post.swift in Sources */,
+				3658D154217867A70095AD9E /* DetailViewController.swift in Sources */,
 				364BE26D2176FEB600A3D7C4 /* PostAPI.swift in Sources */,
 				364BE2692176FB9900A3D7C4 /* HTTPClient+Rx.swift in Sources */,
+				3658D1622178723E0095AD9E /* Router.swift in Sources */,
+				3658D169217873490095AD9E /* AppCoordinator.swift in Sources */,
+				3658D16E2178752B0095AD9E /* MainCoordinator.swift in Sources */,
+				3658D158217871100095AD9E /* Coordinator.swift in Sources */,
+				3658D15E217871C30095AD9E /* NSObjectExtension.swift in Sources */,
 				36F22B862175E6C7002B7559 /* HTTPClient.swift in Sources */,
 				36C5763C21772E2A00B7E6B5 /* ViewModel.swift in Sources */,
+				3658D167217872E90095AD9E /* BaseCoordinator.swift in Sources */,
 				36F22B802175E362002B7559 /* HTTPRequest.swift in Sources */,
 				36F22B7B2175DEEC002B7559 /* TableViewController.swift in Sources */,
 				364BE2712176FF6C00A3D7C4 /* PostResponse.swift in Sources */,
+				3658D15C217871810095AD9E /* BaseView.swift in Sources */,
 				36F22B782175DE08002B7559 /* PostRepositoryImpl.swift in Sources */,
+				3658D15A2178714F0095AD9E /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

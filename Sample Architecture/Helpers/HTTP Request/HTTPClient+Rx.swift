@@ -14,6 +14,7 @@ extension HTTPClient {
         return Single<T>.create { single in
             let request = apiRequest.request(with: self.baseUrl)
             let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+                
                 do {
                     let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
                     single(.success(model))

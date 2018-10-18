@@ -29,23 +29,23 @@ class TableViewModel: ViewModel {
     }
     
     func transform(input: TableViewModel.Input) -> TableViewModel.Output {
-        let posts = Variable<[Post]>([])
-        let errorMessages = Variable<String>("")
+        let posts = BehaviorRelay<[Post]>(value: [])
+        let errorMessages = BehaviorRelay<String>(value: "")
         
         self.postRepostory.getAllPost()
             .subscribe { (result) in
                 switch result {
                 case .next(let model):
-                    posts.value = model
+                    posts.accept(model)
                     break
                 case .error(let error):
-                    errorMessages.value = error.localizedDescription
+                    errorMessages.accept(error.localizedDescription)
                     break
                 default:
                     break
                 }
         }.disposed(by: disposeBag)
         
-        return Output(posts: posts.asDriver(), errorMessages: errorMessages.asDriver())
+        return Output(posts: posts.asDriver(), errorMessages: errorMessages.asDriver().skip(1))
     }
 }

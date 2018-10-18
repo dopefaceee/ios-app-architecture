@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-class PostRepositoryImpl : PostRepository {
+class PostRepositoryImpl: PostRepository {
     
     private let postAPI: PostAPI
     
@@ -22,7 +22,7 @@ class PostRepositoryImpl : PostRepository {
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .map({ (response) -> [Post] in
                 response.map({ (post) -> Post in
-                    Post(userId: post.userId, id: post.id, title: post.title, body: post.body)
+                    Post(userId: post.userId ?? 0, id: post.id ?? 0, title: post.title ?? "", body: post.body ?? "")
                 })
             })
             .asObservable()

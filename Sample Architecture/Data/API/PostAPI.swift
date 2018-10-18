@@ -27,8 +27,4 @@ class PostAPI {
         return httpClient.send(request: GetAllPostRequest())
     }
     
-    func getAllPostFromServerAsync(onResponse callback: @escaping (AsyncResult<[PostResponse]>) -> Void) -> Void {
-        let _ = httpClient.send(request: GetAllPostRequest(), onResponse: callback)
-    }
-    
 }
