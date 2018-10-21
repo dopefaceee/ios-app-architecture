@@ -10,6 +10,5 @@ import Foundation
 import RxSwift
 
 protocol PostRepository {
-    
     func getAllPost() -> Observable<[Post]>
 }

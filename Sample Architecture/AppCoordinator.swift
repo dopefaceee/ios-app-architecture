@@ -11,9 +11,11 @@ import Foundation
 final class AppCoordinator: BaseCoordinator {
     
     private let router: Router
+    private let coordinatorFactory: CoordinatorFactory
     
-    init(router: Router) {
+    init(router: Router, coordinatorFactory: CoordinatorFactory) {
         self.router = router
+        self.coordinatorFactory = coordinatorFactory
     }
     
     override func start() {
@@ -21,7 +23,7 @@ final class AppCoordinator: BaseCoordinator {
     }
     
     private func runMainFlow() {
-        let mainCoordinator = MainCoordinator(router: router)
+        let mainCoordinator = coordinatorFactory.makeMainCoordinator(router: router)
         self.addDependency(mainCoordinator)
         
         mainCoordinator.start()

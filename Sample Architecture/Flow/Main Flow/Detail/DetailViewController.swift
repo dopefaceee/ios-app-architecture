@@ -8,18 +8,18 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-    
+class DetailViewController: UIViewController, DetailView {
+
     @IBOutlet weak var contentLabel: UILabel!
     
-    var param: String?
+    var post: Post?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Detail"
         
-        let paramNotNull = param ?? "--no content from parent--"
+        let paramNotNull = post?.body ?? "--no content from parent--"
         
         contentLabel.text = "Content from Main: \(paramNotNull)"
     }

@@ -56,7 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func makeCoordinator() -> Coordinator {
         return AppCoordinator(
-            router: RouterImpl(rootController: self.rootController)
+            router: RouterImpl(rootController: self.rootController),
+            coordinatorFactory: CoordinatorFactoryImpl()
         )
     }
 

@@ -11,9 +11,11 @@ import Foundation
 class MainCoordinator: BaseCoordinator {
     
     private let router: Router
+    private let factory: MainModuleFactory
     
-    init(router: Router) {
+    init(router: Router, factory: MainModuleFactory) {
         self.router = router
+        self.factory = factory
     }
     
     override func start() {
@@ -21,16 +23,15 @@ class MainCoordinator: BaseCoordinator {
     }
     
     private func showTableView() {
-        let viewController = TableViewController()
-        viewController.onItemClick = { [weak self](value) in
+        let homeView = factory.makeHomeView()
+        homeView.onPostSelect = { [weak self](value) in
             self?.showDetailView(value)
         }
-        router.setRootModule(viewController.toPresent())
+        router.setRootModule(homeView.toPresent())
     }
     
-    private func showDetailView(_ param: String) {
-        let viewController = DetailViewController()
-        viewController.param = param
-        router.push(viewController.toPresent(), animated: true)
+    private func showDetailView(_ param: Post) {
+        let detailView = factory.makeDetailView(post: param)
+        router.push(detailView.toPresent(), animated: true)
     }
 }

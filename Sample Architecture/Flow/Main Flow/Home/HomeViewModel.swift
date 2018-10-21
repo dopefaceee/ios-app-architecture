@@ -10,7 +10,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class TableViewModel: ViewModel {
+class HomeViewModel: ViewModel {
     
     struct Input {
         
@@ -28,7 +28,7 @@ class TableViewModel: ViewModel {
         self.postRepostory = postRepository
     }
     
-    func transform(input: TableViewModel.Input) -> TableViewModel.Output {
+    func transform(input: HomeViewModel.Input) -> HomeViewModel.Output {
         let posts = BehaviorRelay<[Post]>(value: [])
         let errorMessages = BehaviorRelay<String>(value: "")
         
